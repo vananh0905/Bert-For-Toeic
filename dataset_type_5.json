@@ -1,0 +1,452 @@
+{
+    "1": {
+        "question": "lndie film director Luke Steele will be in London for the premiere of ___ new movie.",
+        "1": "him",
+        "2": "his",
+        "3": "himself",
+        "4": "he",
+        "answer": "his",
+        "type": "6"
+    },
+    "2": {
+        "question": "Workers are advised not to operate certain machines by ___ .",
+        "1": "they",
+        "2": "them",
+        "3": "their",
+        "4": "themselves",
+        "answer": "themselves",
+        "type": "6"
+    },
+    "3": {
+        "question": "Mr. Ken O'Hara, Chief Executive of ESB, after more than 40 years service with the company, has announced ___ decision to retire in July .",
+        "1": "ours",
+        "2": "these",
+        "3": "us",
+        "4": "his",
+        "answer": "his",
+        "type": "6"
+    },
+    "4": {
+        "question": "Ruth Akorful is a baker and has been managing ___ business for several years.",
+        "1": "hers",
+        "2": "herself",
+        "3": "her own",
+        "4": "she",
+        "answer": "her own",
+        "type": "6"
+    },
+    "5": {
+        "question": "At the annual stockholders' meeting, large printed material will be made available on request for ___ with visual impairment.",
+        "1": "those",
+        "2": "them",
+        "3": "whose",
+        "4": "which",
+        "answer": "those",
+        "type": "6"
+    },
+    "6": {
+        "question": "After Rachel had worked for the company for more than 10 years, ___ was finally promoted to a managerial position.",
+        "1": "her",
+        "2": "hers",
+        "3": "herself",
+        "4": "she",
+        "answer": "she",
+        "type": "6"
+    },
+    "7": {
+        "question": "All the temporary workers are supposed to keep track of the hours that ___ work.",
+        "1": "them",
+        "2": "their",
+        "3": "those",
+        "4": "they",
+        "answer": "they",
+        "type": "6"
+    },
+    "8": {
+        "question": "The author's comments are considered ___ own and are not necessarily reflective of the view of the magazine publisher.",
+        "1": "she",
+        "2": "hers",
+        "3": "herself",
+        "4": "her",
+        "answer": "her",
+        "type": "6"
+    },
+    "9": {
+        "question": "Eli Clare, ___ latest book was published by Local Home Press, is nominated for the  Lambda Literary Award.",
+        "1": "whatever",
+        "2": "whom",
+        "3": "what",
+        "4": "whose",
+        "answer": "whose",
+        "type": "5"
+    },
+    "10": {
+        "question": "___ applying for the position of marketing director is asked to submit a resume along with two letters of reference.",
+        "1": "Some",
+        "2": "Anyone",
+        "3": "Those",
+        "4": "Whoever",
+        "answer": "Anyone",
+        "type": "6"
+    },
+    "11": {
+        "question": "Since Carol, my boss, was not satisfied with my work, she fired me and gave ___ one month's notice.",
+        "1": "I",
+        "2": "me",
+        "3": "my",
+        "4": "mine",
+        "answer": "me",
+        "type": "6"
+    },
+    "12": {
+        "question": "Jason attempted to utilize some new equipment at the factory, but he had trouble figuring out even where ___ start button was.",
+        "1": "it",
+        "2": "its",
+        "3": "them",
+        "4": "they",
+        "answer": "its",
+        "type": "6"
+    },
+    "13": {
+        "question": "HIB Investment Bank, ___ shareholders were passionate about getting a new CEO, has been going through some chaotic changes recently.",
+        "1": "whatever",
+        "2": "whose",
+        "3": "which",
+        "4": "who",
+        "answer": "whose",
+        "type": "5"
+    },
+    "14": {
+        "question": "Many people at the company have industry experience, but only a handful of ___ can see the future importance of current trends.",
+        "1": "we",
+        "2": "us",
+        "3": "our",
+        "4": "ourselves",
+        "answer": "us",
+        "type": "6"
+    },
+    "15": {
+        "question": "The Neighborhood Involvement Program honors residents ___ volunteer their time to help Egin City.",
+        "1": "for",
+        "2": "who",
+        "3": "those",
+        "4": "as",
+        "answer": "who",
+        "type": "6"
+    },
+    "16": {
+        "question": "Board members are free to discuss the issues among ___ before the formal votes are taken.",
+        "1": "themselves",
+        "2": "theirs",
+        "3": "their",
+        "4": "they",
+        "answer": "themselves",
+        "type": "6"
+    },
+    "17": {
+        "question": "The president of Somchai Bank rides ___ bicycle to work every day, except when it rains.",
+        "1": "he",
+        "2": "him",
+        "3": "his",
+        "4": "himself",
+        "answer": "his",
+        "type": "6"
+    },
+    "18": {
+        "question": "Arise in energy prices will mostly affect businesses ___ energy consumption is high.",
+        "1": "its",
+        "2": "which",
+        "3": "whose",
+        "4": "more",
+        "answer": "whose",
+        "type": "5"
+    },
+    "19": {
+        "question": "Mr. Okello's promotion means that ___ will supervise a larger team.",
+        "1": "he",
+        "2": "his",
+        "3": "him",
+        "4": "himself",
+        "answer": "he",
+        "type": "6"
+    },
+    "20": {
+        "question": "Lately the community sports program has had a surplus of volunteers, ___ are students.",
+        "1": "inasmuch as",
+        "2": "the reason being",
+        "3": "because of them",
+        "4": "most of whom",
+        "answer": "most of whom",
+        "type": "6"
+    },
+    "21": {
+        "question": "Sales clerks at Sylla Bazaar receive additional pay when ___ work in the evening.",
+        "1": "their",
+        "2": "they",
+        "3": "theirs",
+        "4": "them",
+        "answer": "they",
+        "type": "6"
+    },
+    "22": {
+        "question": "___ of Mitesh Sandu's international performances was filmed for the documentary.",
+        "1": "All",
+        "2": "Others",
+        "3": "Their own",
+        "4": "Each one",
+        "answer": "Each one",
+        "type": "6"
+    },
+    "23": {
+        "question": "Mr. Choi wants to know when the illustrations will be ready for ___ review.",
+        "1": "he",
+        "2": "his",
+        "3": "him",
+        "4": "himself",
+        "answer": "his",
+        "type": "6"
+    },
+    "24": {
+        "question": "The course taught by Prof. Brennink is intended for ___ interested in medical or health-related careers.",
+        "1": "either",
+        "2": "those",
+        "3": "which",
+        "4": "whom",
+        "answer": "those",
+        "type": "6"
+    },
+    "25": {
+        "question": "The newspaper editor, Mr. Lim has invited a distinguished architect to write about ___ famous buildings.",
+        "1": "he",
+        "2": "him",
+        "3": "his",
+        "4": "himself",
+        "answer": "his",
+        "type": "6"
+    },
+    "26": {
+        "question": "All employees are required to attend ___ the morning and the afternoon sessions of the training workshop on Friday.",
+        "1": "when",
+        "2": "both",
+        "3": "which",
+        "4": "some",
+        "answer": "both",
+        "type": "6"
+    },
+    "27": {
+        "question": "The North East is one of the best regions in ___ to start a new business, according to Business and Enterprise North East statistics.",
+        "1": "what",
+        "2": "which",
+        "3": "where",
+        "4": "whose",
+        "answer": "which",
+        "type": "5"
+    },
+    "28": {
+        "question": "Mr. Cline requested his boss to authorize ___ to organize the event.",
+        "1": "himself",
+        "2": "his",
+        "3": "him",
+        "4": "he",
+        "answer": "him",
+        "type": "6"
+    },
+    "29": {
+        "question": "Guests must show the invitation ___ received at the entrance to be escorted to their seats.",
+        "1": "their",
+        "2": "them",
+        "3": "they",
+        "4": "theirs",
+        "answer": "they",
+        "type": "6"
+    },
+    "30": {
+        "question": "Winn Furniture ___ has been in business for more than  years strives to provide our customers with functional and durable furniture.",
+        "1": "what",
+        "2": "which",
+        "3": "where",
+        "4": "whom",
+        "answer": "which",
+        "type": "5"
+    },
+    "31": {
+        "question": "Emily introduced ___ before starting the interview for the management job.",
+        "1": "she",
+        "2": "herself",
+        "3": "hers",
+        "4": "her",
+        "answer": "herself",
+        "type": "6"
+    },
+    "32": {
+        "question": "___ who still wish to submit applications after the deadline must pay a $45 late fee in order to be considered.",
+        "1": "Anyone",
+        "2": "Those",
+        "3": "Though",
+        "4": "Seldom",
+        "answer": "Those",
+        "type": "6"
+    },
+    "33": {
+        "question": "___ who wants to reserve a conference room for a meeting can simply e-mail Ms. Bloomberg in administration.",
+        "1": "Anyone",
+        "2": "Others",
+        "3": "Them",
+        "4": "Nobody",
+        "answer": "Anyone",
+        "type": "6"
+    },
+    "34": {
+        "question": "With the financial crisis over and banks eager to provide loans, it has never been ___ easy for the average person to own a home.",
+        "1": "which",
+        "2": "this",
+        "3": "some",
+        "4": "who",
+        "answer": "this",
+        "type": "6"
+    },
+    "35": {
+        "question": "Mr. Chen was surprised by the promotion because ___ had not imagined that it could happen this year.",
+        "1": "his",
+        "2": "himself",
+        "3": "he",
+        "4": "him",
+        "answer": "he",
+        "type": "6"
+    },
+    "36": {
+        "question": "A banquet was held to honor five employees, all of ___ have worked at the company for more than 20 years.",
+        "1": "them",
+        "2": "us",
+        "3": "whom",
+        "4": "which",
+        "answer": "whom",
+        "type": "6"
+    },
+    "37": {
+        "question": "Bryant Cosmetics' marketing team developed a promotional campaign by ___ , rather than outsourcing the work.",
+        "1": "theirs",
+        "2": "them",
+        "3": "themselves",
+        "4": "they",
+        "answer": "themselves",
+        "type": "6"
+    },
+    "38": {
+        "question": "Mr. Chang asked the other board members to think about ___ they would like to nominate as the next chairperson.",
+        "1": "whom",
+        "2": "which",
+        "3": "that",
+        "4": "whose",
+        "answer": "whom",
+        "type": "5"
+    },
+    "39": {
+        "question": "Customers will receive points for every purchase they make, ___ they can use to buy other products sold in the store.",
+        "1": "what",
+        "2": "which",
+        "3": "these",
+        "4": "who",
+        "answer": "which",
+        "type": "5"
+    },
+    "40": {
+        "question": "Passengers must confirm ___ flights at least 72 hours prior to the scheduled time of departure.",
+        "1": "their",
+        "2": "them",
+        "3": "theirs",
+        "4": "themselves",
+        "answer": "theirs",
+        "type": "6"
+    },
+    "41": {
+        "question": "No special seating arrangement was made for the seminar participants, but as ___ arrive, attendants will show them to the available seats.",
+        "1": "these",
+        "2": "they",
+        "3": "their",
+        "4": "them",
+        "answer": "they",
+        "type": "6"
+    },
+    "42": {
+        "question": "Sports commentators have been guessing ___ of the weaker teams in the league will still be eligible to participate.",
+        "1": "what",
+        "2": "which",
+        "3": "that",
+        "4": "whose",
+        "answer": "whose",
+        "type": "5"
+    },
+    "43": {
+        "question": "The food industry is governed by many regulations, which ___ at Benagra Foods keep track of carefully.",
+        "1": "we",
+        "2": "us",
+        "3": "ours",
+        "4": "ourselves",
+        "answer": "we",
+        "type": "6"
+    },
+    "44": {
+        "question": "Concordia Bank may fill the vice-president's position with an executive ___ works for one of its competitors.",
+        "1": "whose",
+        "2": "whoever",
+        "3": "whom",
+        "4": "who",
+        "answer": "who",
+        "type": "6"
+    },
+    "45": {
+        "question": " In order for ___ to provide the necessary benefits, dentists associated with the university's insurance policies must be shown a valid student ID card.",
+        "1": "those",
+        "2": "them",
+        "3": "their",
+        "4": "that",
+        "answer": "them",
+        "type": "6"
+    },
+    "46": {
+        "question": "Mr. Fisher prefers to do his small company's bookkeeping ___ instead of hiring an accountant.",
+        "1": "he",
+        "2": "his",
+        "3": "him",
+        "4": "himself",
+        "answer": "himself",
+        "type": "6"
+    },
+    "47": {
+        "question": "Only ___ with a renewed membership card may attend the concert.",
+        "1": "this",
+        "2": "them",
+        "3": "whose",
+        "4": "those",
+        "answer": "those",
+        "type": "6"
+    },
+    "48": {
+        "question": "Ms. Lucille Meyer received recognition for the production changes ___ proposed.",
+        "1": "she",
+        "2": "that",
+        "3": "were",
+        "4": "until",
+        "answer": "she",
+        "type": "6"
+    },
+    "49": {
+        "question": "Mr. Whatley unintentionally took Ms. Potvin's timetable, thinking it was ___ .",
+        "1": "him",
+        "2": "himself",
+        "3": "his",
+        "4": "he",
+        "answer": "his",
+        "type": "6"
+    },
+    "50": {
+        "question": "Anyone ___ experiences complications with the new software is encouraged to bring this matter to Mr. Gruber's attention in room",
+        "1": "who",
+        "2": "which",
+        "3": "whom",
+        "4": "whose",
+        "answer": "who",
+        "type": "5"
+    }
+}

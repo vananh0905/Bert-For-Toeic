@@ -1,0 +1,452 @@
+{
+    "1": {
+        "question": "Our apartment building's occupancy increased ___ the efforts of our knowledgeable and friendly rental agent, Ms. Gova.",
+        "1": "despite",
+        "2": "due to",
+        "3": "provided that",
+        "4": "because",
+        "answer": "due to",
+        "type": "4"
+    },
+    "2": {
+        "question": "Those employees wishing to change departments ___ the company may send their inquiries to Mr. Alvarez.",
+        "1": "among",
+        "2": "since",
+        "3": "within",
+        "4": "whereas",
+        "answer": "within",
+        "type": "4"
+    },
+    "3": {
+        "question": "___ contacting our Human Resources Department by phone, please include your contact information.",
+        "1": "During",
+        "2": "Until",
+        "3": "After",
+        "4": "When",
+        "answer": "When",
+        "type": "4"
+    },
+    "4": {
+        "question": "___ his falling out with his former employer, Mr. Lee still meets with some of his old co-workers from time to time.",
+        "1": "Subsequently",
+        "2": "However",
+        "3": "Meanwhile",
+        "4": "Despite",
+        "answer": "Despite",
+        "type": "4"
+    },
+    "5": {
+        "question": "___ the CEO was giving a speech to the newly hired employees at the training session, a secretary took a picture of him.",
+        "1": "While",
+        "2": "Yet",
+        "3": "Rather",
+        "4": "As though",
+        "answer": "While",
+        "type": "4"
+    },
+    "6": {
+        "question": "___ she joined our company three years ago, Mrs. Mashimo has greatly expanded our customer base.",
+        "1": "When",
+        "2": "Before",
+        "3": "Whereas",
+        "4": "Since",
+        "answer": "Since",
+        "type": "4"
+    },
+    "7": {
+        "question": "While ___ a foreign country, it would be wise to take only what you will absolutely need during the day and leave anything else in the safe in your hotel room.",
+        "1": "in",
+        "2": "through",
+        "3": "with",
+        "4": "along",
+        "answer": "in",
+        "type": "4"
+    },
+    "8": {
+        "question": "A recent survey indicates ___ young women in particular are showing a strong preference for online shopping.",
+        "1": "what",
+        "2": "that",
+        "3": "which",
+        "4": "those",
+        "answer": "that",
+        "type": "4"
+    },
+    "9": {
+        "question": "Mr. Jackson expressed a strong desire to increase ___ the company's revenue and the number of employees.",
+        "1": "between",
+        "2": "both",
+        "3": "either",
+        "4": "rather",
+        "answer": "both",
+        "type": "4"
+    },
+    "10": {
+        "question": "___ further information, please don't hesitate to call our customer service center at 1-.",
+        "1": "From",
+        "2": "Of",
+        "3": "For",
+        "4": "By",
+        "answer": "For",
+        "type": "4"
+    },
+    "11": {
+        "question": "The Wall Street banks collapsed ___ the uncertainty that investors had about the American economy.",
+        "1": "even though",
+        "2": "because of",
+        "3": "since",
+        "4": "besides",
+        "answer": "because of",
+        "type": "4"
+    },
+    "12": {
+        "question": "Although Jackson Inc. invests a large amount of money in advertising, its competitor, James Inc. doesn't invest ___ in it.",
+        "1": "so far",
+        "2": "so that",
+        "3": "as much",
+        "4": "as long as",
+        "answer": "as much",
+        "type": "4"
+    },
+    "13": {
+        "question": "Frank Truner who was interviewed on Friday will be assigned to either the research department ___ the marketing department.",
+        "1": "but",
+        "2": "or",
+        "3": "and",
+        "4": "neither",
+        "answer": "or",
+        "type": "4"
+    },
+    "14": {
+        "question": "It is important ___ managers draw in the best sales people to sell the products.",
+        "1": "should",
+        "2": "that",
+        "3": "upon",
+        "4": "to",
+        "answer": "that",
+        "type": "4"
+    },
+    "15": {
+        "question": "___ storage space is limited, please notify Benjamin Hatton if you no longer need your locker.",
+        "1": "However",
+        "2": "Despite",
+        "3": "Because",
+        "4": "Therefore",
+        "answer": "Because",
+        "type": "4"
+    },
+    "16": {
+        "question": "___ growing seasonal demand, the store owner decided to hire five additional sales clerks.",
+        "1": "Though",
+        "2": "Due to",
+        "3": "Because",
+        "4": "As of",
+        "answer": "Due to",
+        "type": "4"
+    },
+    "17": {
+        "question": "___ process a refund or exchange, you must notify us within two weeks of receiving your shipment.",
+        "1": "In order to",
+        "2": "Even as",
+        "3": "Since",
+        "4": "Unless",
+        "answer": "In order to",
+        "type": "4"
+    },
+    "18": {
+        "question": "There are two distinct business units ___ Glocell, each focusing on different customers and their needs.",
+        "1": "as for",
+        "2": "between",
+        "3": "within",
+        "4": "because",
+        "answer": "within",
+        "type": "4"
+    },
+    "19": {
+        "question": "When you invest your money, you have to choose ___ to invest in high-risk opportunities or low-risk ones.",
+        "1": "either",
+        "2": "neither",
+        "3": "yet",
+        "4": "nor",
+        "answer": "either",
+        "type": "4"
+    },
+    "20": {
+        "question": "Jane could not apply for the job she desperately wanted ___ it required a high level of English.",
+        "1": "because",
+        "2": "until",
+        "3": "not only",
+        "4": "so that",
+        "answer": "because",
+        "type": "4"
+    },
+    "21": {
+        "question": "The company announced that it would merge with Tyrell Incorporated, ___ it said the opposite only two days later.",
+        "1": "or",
+        "2": "and",
+        "3": "but",
+        "4": "if",
+        "answer": "but",
+        "type": "4"
+    },
+    "22": {
+        "question": "___ the first three months, Tim's boss couldn't find any flaws in him, but he realized that Tim actually has a very hot temper when he got into an argument with his co-worker.",
+        "1": "Within",
+        "2": "Onto",
+        "3": "Along",
+        "4": "For",
+        "answer": "For",
+        "type": "4"
+    },
+    "23": {
+        "question": "Kate was hoping that Harry would correct his mistakes on the proposal before submitting it ___ she told him which mistakes she had found while going over it.",
+        "1": "after",
+        "2": "instead",
+        "3": "during",
+        "4": "beyond",
+        "answer": "after",
+        "type": "4"
+    },
+    "24": {
+        "question": "___ some customers claimed that the company's customer service providers are impolite, HISL Corporation totally ignored the claims.",
+        "1": "Despite",
+        "2": "Whatever",
+        "3": "Although",
+        "4": "Whenever",
+        "answer": "Although",
+        "type": "4"
+    },
+    "25": {
+        "question": "The updated training program is limited to site supervisors ___ the Casey Medical Care system.",
+        "1": "within",
+        "2": "until",
+        "3": "during",
+        "4": "since",
+        "answer": "within",
+        "type": "4"
+    },
+    "26": {
+        "question": "According to the compensation guidelines, employees who regularly complete their work ___ it is due may receive bonuses.",
+        "1": "before",
+        "2": "how",
+        "3": "why",
+        "4": "either",
+        "answer": "before",
+        "type": "4"
+    },
+    "27": {
+        "question": "___ the Nolan Credit Union parking area is now open to the public, a section has been reserved for credit union employees.",
+        "1": "While",
+        "2": "When",
+        "3": "For",
+        "4": "But",
+        "answer": "While",
+        "type": "4"
+    },
+    "28": {
+        "question": "Pharmacy technicians are responsible for verifying and processing prescriptions ___ they are requested by a physician.",
+        "1": "as well as",
+        "2": "as soon as",
+        "3": "in regard to",
+        "4": "in addition to",
+        "answer": "as soon as",
+        "type": "4"
+    },
+    "29": {
+        "question": "Okpara employees should contact their supervisors by 10:00 A.M. ___ they expect to miss a day of work.",
+        "1": "if",
+        "2": "soon",
+        "3": "only",
+        "4": "then",
+        "answer": "if",
+        "type": "4"
+    },
+    "30": {
+        "question": "Prospective tenants must provide at least two references ___ their application.",
+        "1": "too",
+        "2": "in addition",
+        "3": "moreover",
+        "4": "along with",
+        "answer": "along with",
+        "type": "4"
+    },
+    "31": {
+        "question": "___ the effectiveness of Maisey Stanton's leadership on the town council, she will likely win next week's mayoral election.",
+        "1": "Since",
+        "2": "Given",
+        "3": "Among",
+        "4": "Upon",
+        "answer": "Given",
+        "type": "4"
+    },
+    "32": {
+        "question": "Customers still tend to place short notices in the classified section ___ there is no longer a mandated word limit.",
+        "1": "as if",
+        "2": "so that",
+        "3": "in case",
+        "4": "even though",
+        "answer": "even though",
+        "type": "4"
+    },
+    "33": {
+        "question": "The Valletta Visitor Centre offers da ly boat rides ___ the City's historic waterfront",
+        "1": "between",
+        "2": "along",
+        "3": "below",
+        "4": "apart",
+        "answer": "along",
+        "type": "4"
+    },
+    "34": {
+        "question": "Parking on Dahakno Street will be prohibited for the next few days ___ emergency repairs to water lines",
+        "1": "so that",
+        "2": "as a result",
+        "3": "in order to",
+        "4": "because of",
+        "answer": "because of",
+        "type": "4"
+    },
+    "35": {
+        "question": "The evaluation report will be completed ___ after the auditors inspect the laboratory.",
+        "1": "when",
+        "2": "only",
+        "3": "still",
+        "4": "most",
+        "answer": "only",
+        "type": "4"
+    },
+    "36": {
+        "question": "Due to low registration, the communications workshop scheduled for July 2 will be postponed ___ further notice.",
+        "1": "until",
+        "2": "onto",
+        "3": "since",
+        "4": "all",
+        "answer": "until",
+        "type": "4"
+    },
+    "37": {
+        "question": "The judges may begin to review the entries ___ the deadline for submitting slogans has passed.",
+        "1": "how",
+        "2": "nor",
+        "3": "now that",
+        "4": "whether",
+        "answer": "now that",
+        "type": "4"
+    },
+    "38": {
+        "question": "Investing in ___ -- properties as possible can be risky but is often lucrative",
+        "1": "as much",
+        "2": "as many",
+        "3": "so much",
+        "4": "so many",
+        "answer": "as many",
+        "type": "4"
+    },
+    "39": {
+        "question": "All Buehler Energy customers are encouraged to sign up for electronic statements ___ paper ones.",
+        "1": "except",
+        "2": "through",
+        "3": "instead of",
+        "4": "according to",
+        "answer": "instead of",
+        "type": "4"
+    },
+    "40": {
+        "question": "This Friday, all employees may depart two hours before closing ___ their manager requires them to stay.",
+        "1": "either",
+        "2": "nor",
+        "3": "because",
+        "4": "unless",
+        "answer": "unless",
+        "type": "4"
+    },
+    "41": {
+        "question": "The songs on Sophia Vestra's new album are ___ the most innovative musical arrangements of her career.",
+        "1": "beside",
+        "2": "over",
+        "3": "among",
+        "4": "upon",
+        "answer": "among",
+        "type": "4"
+    },
+    "42": {
+        "question": "Online orders are handled by Mr. Clark's team, ___ regular mail orders are overseen by Ms. Adauto's group.",
+        "1": "while",
+        "2": "until",
+        "3": "despite",
+        "4": "whether",
+        "answer": "while",
+        "type": "4"
+    },
+    "43": {
+        "question": "New tax incentives reward local businesses ___ decrease their water consumption.",
+        "1": "will",
+        "2": "when",
+        "3": "that",
+        "4": "if",
+        "answer": "that",
+        "type": "4"
+    },
+    "44": {
+        "question": "___ the kiln's heat is set too high, the ceramic objects inside may be ruined",
+        "1": "So",
+        "2": "Lf",
+        "3": "But",
+        "4": "Why",
+        "answer": "Lf",
+        "type": "4"
+    },
+    "45": {
+        "question": "Please review the repair estimate carefully ___ it has been received from the maintenance department.",
+        "1": "then",
+        "2": "while",
+        "3": "ever since",
+        "4": "as soon as",
+        "answer": "as soon as",
+        "type": "4"
+    },
+    "46": {
+        "question": "___ an increase in small, individual furnaces, glassblowing has become a more accessible and popular art medium.",
+        "1": "Because of",
+        "2": "Instead of",
+        "3": "Rather than",
+        "4": "Such as",
+        "answer": "Because of",
+        "type": "4"
+    },
+    "47": {
+        "question": "___ in the news, the Honorable Cynthia Rengle is now making headlines with her proposal to drastically reduce local taxes",
+        "1": "Less",
+        "2": "Enough",
+        "3": "Apart",
+        "4": "Seldom",
+        "answer": "Seldom",
+        "type": "4"
+    },
+    "48": {
+        "question": "___ the meeting, agenda items are discussed by the board of directors and minutes are taken by the secretary.",
+        "1": "When",
+        "2": "While",
+        "3": "Instead",
+        "4": "During",
+        "answer": "During",
+        "type": "4"
+    },
+    "49": {
+        "question": "Recommendations for the prize will be considered by the committee, ___ are not necessarily required to receive it.",
+        "1": "while",
+        "2": "after",
+        "3": "then",
+        "4": "but",
+        "answer": "but",
+        "type": "4"
+    },
+    "50": {
+        "question": "We are planning to launch the new product throughout the country ___ a reliable distributor and a wholesale dealer are found.",
+        "1": "on the other hand",
+        "2": "as well as",
+        "3": "instead of",
+        "4": "as soon as",
+        "answer": "as soon as",
+        "type": "4"
+    }
+}

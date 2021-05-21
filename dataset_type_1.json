@@ -1,0 +1,452 @@
+{
+    "1": {
+        "question": "Laboratory employees are expected to wear a name tag and carry identification at ___ times.",
+        "1": "full",
+        "2": "complete",
+        "3": "all",
+        "4": "total",
+        "answer": "all",
+        "type": "1"
+    },
+    "2": {
+        "question": "The latest training ___ contains tips on teaching a second language to international students:",
+        "1": "method",
+        "2": "guide",
+        "3": "staff",
+        "4": "role",
+        "answer": "guide",
+        "type": "1"
+    },
+    "3": {
+        "question": "Ursa Major Corp. has ___ negotiated a deal with a Russian competitor in surveying the Kamchatka Peninsula.",
+        "1": "soon",
+        "2": "shortly",
+        "3": "recently",
+        "4": "yet",
+        "answer": "recently",
+        "type": "1"
+    },
+    "4": {
+        "question": "Even experienced clerks are encouraged to attend training ___ to keep them updated on new ideas in the world of banking.",
+        "1": "materials",
+        "2": "sessions",
+        "3": "experiences",
+        "4": "positions",
+        "answer": "sessions",
+        "type": "1"
+    },
+    "5": {
+        "question": "Mr. Singh requested ___ from several catering companies before making his decision.",
+        "1": "estimates",
+        "2": "sponsors",
+        "3": "deliverance",
+        "4": "relocations",
+        "answer": "estimates",
+        "type": "1"
+    },
+    "6": {
+        "question": "The New Economic Quarterly criticized the ___ of all new products produced by Yun Sung Industrial Co., Ltd.",
+        "1": "procedure",
+        "2": "layer",
+        "3": "accessory",
+        "4": "quality",
+        "answer": "quality",
+        "type": "1"
+    },
+    "7": {
+        "question": "In order to ensure customer safety, the government has ___ a new set of guidelines for pharmaceutical companies.",
+        "1": "instituted",
+        "2": "proved",
+        "3": "decided",
+        "4": "resembled",
+        "answer": "instituted",
+        "type": "1"
+    },
+    "8": {
+        "question": "Our ___ production goals will be directed by a skilled team of qualified managers.",
+        "1": "comparative",
+        "2": "envious",
+        "3": "pleased",
+        "4": "ambitious",
+        "answer": "ambitious",
+        "type": "1"
+    },
+    "9": {
+        "question": "___ our financial goals for this year may require cutting back on some overhead costs.",
+        "1": "Bringing",
+        "2": "Helping",
+        "3": "Maintaining",
+        "4": "Promoting",
+        "answer": "Maintaining",
+        "type": "1"
+    },
+    "10": {
+        "question": "An anniversary dinner was held ___ for high-ranking officials in the corporation.",
+        "1": "gradually",
+        "2": "nearly",
+        "3": "exclusively",
+        "4": "precisely",
+        "answer": "exclusively",
+        "type": "1"
+    },
+    "11": {
+        "question": "Because of the added guests from our allied financial firm, a more ___ meeting room had to be used than usual.",
+        "1": "satisfied",
+        "2": "spacious",
+        "3": "considerable",
+        "4": "capable",
+        "answer": "spacious",
+        "type": "1"
+    },
+    "12": {
+        "question": "Since opening last year, Savannah Safari Park quickly ___ one of the leading recreational spots in the region.",
+        "1": "competed",
+        "2": "became",
+        "3": "continued",
+        "4": "thought",
+        "answer": "became",
+        "type": "1"
+    },
+    "13": {
+        "question": "Remember to list fixed expenses ___ from variable expenses.",
+        "1": "arbitrarily",
+        "2": "separately",
+        "3": "definitely",
+        "4": "mutually",
+        "answer": "separately",
+        "type": "1"
+    },
+    "14": {
+        "question": "Ms. Stanhope always tries to ___ her colleagues on the budget.",
+        "1": "consult",
+        "2": "make",
+        "3": "invite",
+        "4": "request",
+        "answer": "consult",
+        "type": "1"
+    },
+    "15": {
+        "question": "The CEO of Lawrence United Co. is still ___ about opening company branches in Mexico.",
+        "1": "approximate",
+        "2": "important",
+        "3": "uncertain",
+        "4": "intended",
+        "answer": "uncertain",
+        "type": "1"
+    },
+    "16": {
+        "question": "The staff lounge is ___ the meeting room, across the hall from the computer lab.",
+        "1": "throughout",
+        "2": "against",
+        "3": "next",
+        "4": "near",
+        "answer": "near",
+        "type": "1"
+    },
+    "17": {
+        "question": "The manager ___ Mr. Karnes a promotion because of his successful handling of the company's accounting for the past two years.",
+        "1": "implemented",
+        "2": "induced",
+        "3": "surprised",
+        "4": "granted",
+        "answer": "granted",
+        "type": "1"
+    },
+    "18": {
+        "question": "The awards ___ will begin at approximately 6:00 this evening, at which time winners are requested to be present to receive their awards.",
+        "1": "ceremony",
+        "2": "advice",
+        "3": "product",
+        "4": "invention",
+        "answer": "ceremony",
+        "type": "1"
+    },
+    "19": {
+        "question": "For defective merchandise, we will gladly ___ the product or give you a full refund.",
+        "1": "replace",
+        "2": "cause",
+        "3": "interfere",
+        "4": "return",
+        "answer": "replace",
+        "type": "1"
+    },
+    "20": {
+        "question": "Dieting during pregnancy is never ___ , as it can limit the nutrition available to the baby.",
+        "1": "subjected",
+        "2": "restored",
+        "3": "recommended",
+        "4": "opened",
+        "answer": "recommended",
+        "type": "1"
+    },
+    "21": {
+        "question": "Open Society Institute has ___ offered to sponsor a number of participants from developing countries for attendance at the OA Workshop.",
+        "1": "enormously",
+        "2": "financially",
+        "3": "exceptionally",
+        "4": "generously",
+        "answer": "generously",
+        "type": "1"
+    },
+    "22": {
+        "question": "The sales manager has been asked to lead a ___ of the Asian market's future outlook during the board meeting tonight at 7 p.m.",
+        "1": "discussion",
+        "2": "goal",
+        "3": "group",
+        "4": "happening",
+        "answer": "discussion",
+        "type": "1"
+    },
+    "23": {
+        "question": "Reservations are made on a first-come, first-served basis and are ___ to room availability.",
+        "1": "plain",
+        "2": "public",
+        "3": "subject",
+        "4": "general",
+        "answer": "subject",
+        "type": "1"
+    },
+    "24": {
+        "question": "After months of ___ , we are pleased to announce that the company and your union have reached an agreement that resolves 9 out of 1Opending grievances.",
+        "1": "specialty",
+        "2": "composition",
+        "3": "priorities",
+        "4": "negotiations",
+        "answer": "negotiations",
+        "type": "1"
+    },
+    "25": {
+        "question": "The building built by Emaar Properties was ___ scheduled to be completed at the end of this year but the target date has been changed due to revisions in the building's design.",
+        "1": "fluently",
+        "2": "currently",
+        "3": "considerably",
+        "4": "originally",
+        "answer": "originally",
+        "type": "1"
+    },
+    "26": {
+        "question": "As space is limited, be sure to contact Bill in the personnel department a minimum of three days in advance to ___ for a workshop.",
+        "1": "approve",
+        "2": "express",
+        "3": "register",
+        "4": "record",
+        "answer": "register",
+        "type": "1"
+    },
+    "27": {
+        "question": "As a manager, you are also responsible for maintaining a work ___ that is comfortable and ergonomically safe.",
+        "1": "environment",
+        "2": "participation",
+        "3": "reaction",
+        "4": "incident",
+        "answer": "environment",
+        "type": "1"
+    },
+    "28": {
+        "question": "The tree-lined trails and ___ slopes make Whistler Mountain a dangerous place to ride, even for experienced cyclists.",
+        "1": "heavy",
+        "2": "forceful",
+        "3": "steep",
+        "4": "strict",
+        "answer": "steep",
+        "type": "1"
+    },
+    "29": {
+        "question": "Many people prefer to shop at The Bay Department Store as it offers a lifetime warranty on ___ purchases.",
+        "1": "any of",
+        "2": "each",
+        "3": "all",
+        "4": "every",
+        "answer": "all",
+        "type": "1"
+    },
+    "30": {
+        "question": "In an unprecedented ___ of generosity, Patty DeDominic, the founder of DeDominic & Associates, pledged a $1-million donation that will help local charities.",
+        "1": "act",
+        "2": "progress",
+        "3": "chance",
+        "4": "number",
+        "answer": "act",
+        "type": "1"
+    },
+    "31": {
+        "question": "Satyam Computer Services Ltd. has extended the ___ for submitting applications for the marketing manager position to April 13th.",
+        "1": "calendar",
+        "2": "intention",
+        "3": "deadline",
+        "4": "admission",
+        "answer": "deadline",
+        "type": "1"
+    },
+    "32": {
+        "question": "If mechanical problems occur at the time of your scheduled trip, alternatives will be discussed with you whether to reschedule the trip for a ___ time.",
+        "1": "later",
+        "2": "recent",
+        "3": "further",
+        "4": "following",
+        "answer": "later",
+        "type": "1"
+    },
+    "33": {
+        "question": "We have ___ with community groups and business partners to support local economic development projects.",
+        "1": "recalled",
+        "2": "collaborated",
+        "3": "provided",
+        "4": "employed",
+        "answer": "collaborated",
+        "type": "1"
+    },
+    "34": {
+        "question": "All sales representatives should know ___ information about the product they are selling and be able to answer any questions.",
+        "1": "approached",
+        "2": "detailed",
+        "3": "probable",
+        "4": "loyal",
+        "answer": "detailed",
+        "type": "1"
+    },
+    "35": {
+        "question": "The president of the company gave credit for the increased number of sales to the ___ work done by his staff.",
+        "1": "excellent",
+        "2": "interested",
+        "3": "grateful",
+        "4": "absolute",
+        "answer": "excellent",
+        "type": "1"
+    },
+    "36": {
+        "question": "Although the owner of the company wasn't able to attend the meeting, his secretary was ___ to take important notes for him.",
+        "1": "where",
+        "2": "when",
+        "3": "there",
+        "4": "why",
+        "answer": "there",
+        "type": "1"
+    },
+    "37": {
+        "question": "Wiping out the company's data on retiring workers' computers may ___ any leak concerning crucial information aboutthe company.",
+        "1": "begin",
+        "2": "hurry",
+        "3": "prevent",
+        "4": "enhance",
+        "answer": "prevent",
+        "type": "1"
+    },
+    "38": {
+        "question": "After a long speech about the importance of working hard, Mr. Glenn ___ reminded his workers to work hard every day.",
+        "1": "once",
+        "2": "far",
+        "3": "yet",
+        "4": "still",
+        "answer": "still",
+        "type": "1"
+    },
+    "39": {
+        "question": "My application was to be reviewed ___ because I attended the company's summer internship course.",
+        "1": "slowly",
+        "2": "nearly",
+        "3": "primarily",
+        "4": "variously",
+        "answer": "primarily",
+        "type": "1"
+    },
+    "40": {
+        "question": "The president has just realized that the launch of our new product must be postponed owing to ___ conditions in the market.",
+        "1": "unwilling",
+        "2": "unfavorable",
+        "3": "opposing",
+        "4": "reluctant",
+        "answer": "unfavorable",
+        "type": "1"
+    },
+    "41": {
+        "question": "The contract indicates that if your car ___ on the road, you can get immediate roadside service within one hour.",
+        "1": "picks up",
+        "2": "hangs up",
+        "3": "turns down",
+        "4": "breaks down",
+        "answer": "breaks down",
+        "type": "1"
+    },
+    "42": {
+        "question": "Ms. Kempbell runs a company that builds ___ in both professional music agencies and people's houses.",
+        "1": "sketches",
+        "2": "solutions",
+        "3": "stylists",
+        "4": "studios",
+        "answer": "studios",
+        "type": "1"
+    },
+    "43": {
+        "question": "The CEO addressed the future of the company so passionately ___ the conference that he didn't even realize that he was losing his voice.",
+        "1": "among",
+        "2": "throughout",
+        "3": "while",
+        "4": "toward",
+        "answer": "throughout",
+        "type": "1"
+    },
+    "44": {
+        "question": "As much as the Korean economy has ___ - tremendously in a short period of time, there are still many problems that our nation is facing.",
+        "1": "thought",
+        "2": "based",
+        "3": "resulted",
+        "4": "developed",
+        "answer": "developed",
+        "type": "1"
+    },
+    "45": {
+        "question": "The manager's speech on hard work was not ___ because he is not considered a hard worker to the audience.",
+        "1": "effective",
+        "2": "total",
+        "3": "raised",
+        "4": "complete",
+        "answer": "effective",
+        "type": "1"
+    },
+    "46": {
+        "question": "As we have had workers who quit after working for a short period of time, we need someone who can work ___ for at least a year.",
+        "1": "exactly",
+        "2": "jointly",
+        "3": "hardly",
+        "4": "consistently",
+        "answer": "consistently",
+        "type": "1"
+    },
+    "47": {
+        "question": "Maverick Manufacturers has maintained the highest safety ___ of any company in its industry.",
+        "1": "standards",
+        "2": "guides",
+        "3": "documents",
+        "4": "precautions",
+        "answer": "standards",
+        "type": "1"
+    },
+    "48": {
+        "question": "Most workers agree that ___ the number of work hours is not going to increase the company's revenue because it actually results in lower work efficiency.",
+        "1": "reaching",
+        "2": "submitting",
+        "3": "extending",
+        "4": "offering",
+        "answer": "extending",
+        "type": "1"
+    },
+    "49": {
+        "question": "Although the company had a tight budget, they invested more money in their new product because they believed it was ___ in the long run.",
+        "1": "conclusive",
+        "2": "financial",
+        "3": "beneficial",
+        "4": "regulated",
+        "answer": "beneficial",
+        "type": "1"
+    },
+    "50": {
+        "question": "Due to the contractual ___ , the company had to keep supplying the raw material for a cheap price even though there has been a rise in the overall market price.",
+        "1": "surplus",
+        "2": "indication",
+        "3": "forecast",
+        "4": "obligation",
+        "answer": "obligation",
+        "type": "1"
+    }
+}

@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import json
+import json, time
 
 import torch
 import torch.nn as nn
@@ -30,13 +30,22 @@ def get_data():
 
     return data
 
+def get_data_for_datatype(id):
+    print('Get dataset type ' + id)
+    filename = 'dataset_type_' + id + '.json'
+    with open(filename) as data_file:
+        file = json.load(data_file)
+        data = []
+        for value in file.values():
+            data.append(value)
+
+    return data
 
 def preprocess_data(data, max_seq_len, batch_size):
 
     print('Preprocess data ...')
     # split train set, test set
-    D_train, D_test = train_test_split(data, random_state = 2020,
-                                  test_size = 0.2)
+    D_train, D_test = train_test_split(data, random_state = 2020, test_size = 0.2)
 
     def get(data):
         X, Y = [], []
@@ -74,6 +83,7 @@ def preprocess_data(data, max_seq_len, batch_size):
 
     return train_dataloader, D_test
 
+
 class Net(nn.Module):
     def __init__(self, bert):
         super(Net, self).__init__()
@@ -83,8 +93,8 @@ class Net(nn.Module):
         self.dropout = nn.Dropout(p=0.2)
 
         self.relu = nn.ReLU()
-        self.fc1 = nn.Linear(768, 512)
-        self.fc2 = nn.Linear(512, 2)
+        self.fc1 = nn.Linear(768, 2)
+        # self.fc2 = nn.Linear(512, 2)
         # self.softmax = nn.LogSoftmax(dim=1)
 
 
@@ -95,14 +105,16 @@ class Net(nn.Module):
         x = self.dropout(cls)
 
         x = self.fc1(x)
-        x = self.relu(x)
-        x = self.dropout(x)
+        # x = self.relu(x)
+        # x = self.dropout(x)
         
         # # output Layer
-        x = self.fc2(x)
+        # x = self.fc2(x)
 
         return x
-class TOEICBert(object):
+
+
+class TOEICBert:
 
     def __init__(self, model, lr, n_epoches, train_loader):
         super(TOEICBert, self).__init__()
@@ -129,17 +141,17 @@ class TOEICBert(object):
 
         return AdamW(self.model.parameters(), lr=lr)
 
+    
     def criterion(self,ouput, target):
         return self.ce(ouput, target)
 
+    
     def train_epoch(self, train_dataloader):
         
         self.model.train()
         total_loss = 0.0
         for step,batch in enumerate(train_dataloader):
             
-            if step % 50 == 0:
-              print('batch: {}/{} loss: {}'.format(step, len(train_dataloader), total_loss/(step+1)))
 
             batch = [r.to(self.device) for r in batch]
             sent_id, mask, labels = batch
@@ -153,9 +165,12 @@ class TOEICBert(object):
 
             loss.backward()
             self.optimizer.step()
+            
+            if step % 100 == 0:
+              print('\tbatch: {}/{} loss: {}'.format(step, len(train_dataloader), total_loss/(step+1)))
 
 
-    def train(self, train_dataloader, test_dataloader):
+    def train(self, train_dataloader, test_dataloader, datatype):
         self.model = self.model.to(self.device)
 
         print('Start training...')
@@ -164,11 +179,26 @@ class TOEICBert(object):
             print('Epoch {:3d} '.format(e+1))
             self.train_epoch(train_dataloader)
 
-            train_acc, train_f1 = self.validate(train_dataloader)
-            print('train acc: {:.3f} | train f1: {:.3f}'.format(train_acc, train_f1))
+            train_acc, train_f1, train_prec = self.validate(train_dataloader)
+            print('train acc: {:.3f} | train f1: {:.3f} | train precision: {:.3f}'.format(train_acc, train_f1, train_prec))
 
-            test_acc = self.evaluate(test_dataloader)
-            print('test acc: {:.3f}'.format(test_acc))
+            test_acc, time = self.evaluate(test_dataloader)
+            print('test acc: {:.3f} time each question: {:.3f}'.format(test_acc, time))
+
+            type1_acc, _ = self.evaluate(datatype['1'])
+            print('type1 acc: {:.3f}'.format(type1_acc))
+
+            type2_acc, _ = self.evaluate(datatype['2'])
+            print('type2 acc: {:.3f}'.format(type2_acc))
+
+            type3_acc, _ = self.evaluate(datatype['3'])
+            print('type3 acc: {:.3f}'.format(type3_acc))
+
+            type4_acc, _ = self.evaluate(datatype['4'])
+            print('type4 acc: {:.3f}'.format(type4_acc))
+
+            type5_acc, _ = self.evaluate(datatype['5'])
+            print('type5 acc: {:.3f}'.format(type5_acc))
 
 
     def validate(self, dataloader):
@@ -192,10 +222,10 @@ class TOEICBert(object):
         predicted_labels, target_labels = np.array(predicted_labels), np.array(target_labels)
         accuracy = metrics.accuracy_score(target_labels, predicted_labels)
         f1 = metrics.f1_score(target_labels, predicted_labels)
-        
+        precision = metrics.precision_score(target_labels, predicted_labels)
+        return accuracy, f1, precision
 
-        return accuracy, f1
-
+    
     def evaluate(self, dataloader):
         tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
 
@@ -210,19 +240,31 @@ class TOEICBert(object):
                 output = self.model(inputs['input_ids'].to(device), inputs['attention_mask'].to(device))
             prediction = torch.softmax(output, dim=-1)
             return torch.argmax(prediction[:, 1], dim=-1).item()+1
-
+        tstart = time.time()
         sent = 0
         for item in dataloader:
             answer = test(item)
             if item[str(answer)] == item['answer']:
               sent += 1
-        return sent/len(dataloader)
+        tend = time.time()
+        return sent/len(dataloader), (tend-tstart)/len(dataloader)
 
 
 if __name__ == "__main__":
     bert = AutoModel.from_pretrained('bert-base-uncased')
     model = Net(bert)
     data = get_data()
+    set1 = get_data_for_datatype('1')
+    set2 = get_data_for_datatype('2')
+    set3 = get_data_for_datatype('3')
+    set4 = get_data_for_datatype('4')
+    set5 = get_data_for_datatype('5')
+    datatype = {}
+    datatype['1'] = set1
+    datatype['2'] = set2 
+    datatype['3'] = set3
+    datatype['4'] = set4 
+    datatype['5'] = set5
     train_dataloader, D_test = preprocess_data(data, max_seq_len = 64, batch_size=32)
     appr = TOEICBert(model, lr=1e-5, n_epoches=20, train_loader=train_dataloader)
-    appr.train(train_dataloader, D_test)
+    appr.train(train_dataloader, D_test, datatype)

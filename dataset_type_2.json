@@ -1,0 +1,452 @@
+{
+    "1": {
+        "question": "Heidelberg Publishing Co. offers employees ___ performance bonuses to encourage success.",
+        "1": "of",
+        "2": "for",
+        "3": "with",
+        "4": "to",
+        "answer": "with",
+        "type": "2"
+    },
+    "2": {
+        "question": "If you would like a demonstration ___ the new product, just ask the BKM staff at the booth.",
+        "1": "along",
+        "2": "during",
+        "3": "of",
+        "4": "into",
+        "answer": "of",
+        "type": "2"
+    },
+    "3": {
+        "question": "Either the marketing director or the sales manager will represent Centum Construction Inc. ___ the Bexco Architecture Conference.",
+        "1": "among",
+        "2": "up",
+        "3": "at",
+        "4": "of",
+        "answer": "at",
+        "type": "2"
+    },
+    "4": {
+        "question": "All the employees at SEI Corporation are invited to the meeting ___ the new internal communications system that the company is about to bring in.",
+        "1": "at",
+        "2": "with",
+        "3": "on",
+        "4": "over",
+        "answer": "on",
+        "type": "2"
+    },
+    "5": {
+        "question": "To cut down on electricity wastage, we use energy-saving light bulbs and remind employees to turn ___ their computers when they leave the office.",
+        "1": "onto",
+        "2": "off",
+        "3": "out",
+        "4": "at",
+        "answer": "off",
+        "type": "2"
+    },
+    "6": {
+        "question": "If students are unable to arrive ___ the date specified on their visa documents, they will be sent home and will have to restart the application process.",
+        "1": "in",
+        "2": "from",
+        "3": "between",
+        "4": "by",
+        "answer": "by",
+        "type": "2"
+    },
+    "7": {
+        "question": "Although Mr. Broadwater was the most qualified ___ all the applicants for the position, the job was given to another.",
+        "1": "in",
+        "2": "of",
+        "3": "at",
+        "4": "out",
+        "answer": "of",
+        "type": "2"
+    },
+    "8": {
+        "question": "___ the past two years, the number of car accidents has gone up by 15%.",
+        "1": "In",
+        "2": "Of",
+        "3": "At",
+        "4": "On",
+        "answer": "In",
+        "type": "2"
+    },
+    "9": {
+        "question": "___ change your seating assignment, visit the reservations page on our Web site.",
+        "1": "For",
+        "2": "Across",
+        "3": "With",
+        "4": "To",
+        "answer": "To",
+        "type": "2"
+    },
+    "10": {
+        "question": "In the photograph, President Tang can be seen standing ___ Dr. Dervishi.",
+        "1": "from",
+        "2": "reverse",
+        "3": "opposite",
+        "4": "distant",
+        "answer": "opposite",
+        "type": "2"
+    },
+    "11": {
+        "question": "The updated safety manual includes guidelines ___ the entire factory.",
+        "1": "so",
+        "2": "and",
+        "3": "both",
+        "4": "for",
+        "answer": "for",
+        "type": "2"
+    },
+    "12": {
+        "question": "At Imprint Eyewear, most prescription eyeglasses can be made ___ two business days.",
+        "1": "since",
+        "2": "to",
+        "3": "against",
+        "4": "within",
+        "answer": "within",
+        "type": "2"
+    },
+    "13": {
+        "question": "The project meeting has been rescheduled ___ tomorrow because of the bad weather.",
+        "1": "in",
+        "2": "by",
+        "3": "out",
+        "4": "for",
+        "answer": "for",
+        "type": "2"
+    },
+    "14": {
+        "question": "Old magazines and important papers are stored ___ the top shelf in labeled files.",
+        "1": "out",
+        "2": "on",
+        "3": "to",
+        "4": "for",
+        "answer": "on",
+        "type": "2"
+    },
+    "15": {
+        "question": "Infosys Technologies Ltd. has instituted an annual award of $5 million for Korean scientists who have achieved excellence ___ research in biotechnology.",
+        "1": "in promoting",
+        "2": "for the promotion",
+        "3": "by promoting",
+        "4": "as a promotion",
+        "answer": "in promoting",
+        "type": "2"
+    },
+    "16": {
+        "question": "Please forward the message ___ the advertising agency in Busan to Mrs. Hwang's office directly.",
+        "1": "as",
+        "2": "out",
+        "3": "up",
+        "4": "from",
+        "answer": "from",
+        "type": "2"
+    },
+    "17": {
+        "question": "The marketing team members are supposed to be on time ___ tomorrow's advertising planning meeting.",
+        "1": "across",
+        "2": "under",
+        "3": "for",
+        "4": "down",
+        "answer": "for",
+        "type": "2"
+    },
+    "18": {
+        "question": "Cellist Irene Hudson is arranging an accompanied performance ___ the Toronto Philharmonic Orchestra.",
+        "1": "off",
+        "2": "with",
+        "3": "among",
+        "4": "through",
+        "answer": "with",
+        "type": "2"
+    },
+    "19": {
+        "question": "A doubled remittance charge is placed ___ international money transfers compared to domestic ones.",
+        "1": "in",
+        "2": "above",
+        "3": "from",
+        "4": "on",
+        "answer": "on",
+        "type": "2"
+    },
+    "20": {
+        "question": "The human resources department is ___ pressure to find a replacement for the senior accountant.",
+        "1": "within",
+        "2": "through",
+        "3": "under",
+        "4": "among",
+        "answer": "under",
+        "type": "2"
+    },
+    "21": {
+        "question": "Those planning to join the historic district tour are asked to be ___ the center's reception area at 8 A.M. tomorrow.",
+        "1": "on",
+        "2": "from",
+        "3": "in",
+        "4": "of",
+        "answer": "in",
+        "type": "2"
+    },
+    "22": {
+        "question": "Employees at Branford Computing Group are expected to respond to all technical support questions ___ 24 hours.",
+        "1": "within",
+        "2": "between",
+        "3": "since",
+        "4": "until",
+        "answer": "within",
+        "type": "2"
+    },
+    "23": {
+        "question": "Company policy requires that all staff members be at their desks before 9:30 A.M., ___ unforeseen circumstances.",
+        "1": "though",
+        "2": "barring",
+        "3": "toward",
+        "4": "with",
+        "answer": "barring",
+        "type": "2"
+    },
+    "24": {
+        "question": "Patrons who want a refund or exchange must make a request at the customer service center within one month ___ the date of purchase.",
+        "1": "from",
+        "2": "at",
+        "3": "before",
+        "4": "between",
+        "answer": "from",
+        "type": "2"
+    },
+    "25": {
+        "question": "The tour guide gave assurances and said that the group would not depart for its destination until everyone was definitely ___ the boat.",
+        "1": "aboard",
+        "2": "among",
+        "3": "below",
+        "4": "away",
+        "answer": "aboard",
+        "type": "2"
+    },
+    "26": {
+        "question": "The purchasing manager can only order parts from companies that are found ___ the company's list of approved suppliers.",
+        "1": "on",
+        "2": "by",
+        "3": "with",
+        "4": "around",
+        "answer": "on",
+        "type": "2"
+    },
+    "27": {
+        "question": "The tour bus drove ___ several notable sites in Victoria and made three stops in particularly interesting districts.",
+        "1": "past",
+        "2": "out",
+        "3": "without",
+        "4": "up",
+        "answer": "past",
+        "type": "2"
+    },
+    "28": {
+        "question": "According to the company timetable, the business luncheon is supposed to take place ___ 12 P.M. and 2 P.M. this coming Friday.",
+        "1": "between",
+        "2": "except",
+        "3": "during",
+        "4": "within",
+        "answer": "except",
+        "type": "2"
+    },
+    "29": {
+        "question": "___ hearing the fire alarm, the students evacuated the building via the nearest exit.",
+        "1": "Upon",
+        "2": "From",
+        "3": "Within",
+        "4": "Besides",
+        "answer": "Upon",
+        "type": "2"
+    },
+    "30": {
+        "question": "Dr. Marcus spoke ___ the allotted 30 minutes, leaving no time for questions after his speech.",
+        "1": "beyond",
+        "2": "about",
+        "3": "under",
+        "4": "around",
+        "answer": "beyond",
+        "type": "2"
+    },
+    "31": {
+        "question": "After working abroad for years, Alice Strepp was surprised when the company relocated her ___ the headquarters.",
+        "1": "to",
+        "2": "out",
+        "3": "onto",
+        "4": "through",
+        "answer": "to",
+        "type": "2"
+    },
+    "32": {
+        "question": "___ the passengers of the overbooked flight to San Diego, only four said they would be willing to travel at a later time.",
+        "1": "Among",
+        "2": "Into",
+        "3": "Between",
+        "4": "Throughout",
+        "answer": "Among",
+        "type": "2"
+    },
+    "33": {
+        "question": "Vail Enterprises' stock price is ___ 16 percent since the start of the year, mostly because of an increase in its overseas revenues.",
+        "1": "behind",
+        "2": "toward",
+        "3": "up",
+        "4": "around",
+        "answer": "up",
+        "type": "2"
+    },
+    "34": {
+        "question": "Employees may not use the hotel's main entrance and must pass ___ a side door located near the back of the building.",
+        "1": "over",
+        "2": "to",
+        "3": "of",
+        "4": "through",
+        "answer": "through",
+        "type": "2"
+    },
+    "35": {
+        "question": "Envelopes must be properly sealed ___ dropping them into the mailbox, as the post office is not accountable for lost documents.",
+        "1": "among",
+        "2": "before",
+        "3": "beside",
+        "4": "while",
+        "answer": "before",
+        "type": "2"
+    },
+    "36": {
+        "question": "Greg O'Leary has been leading research in our laboratories ___ over eighteen years.",
+        "1": "in",
+        "2": "for",
+        "3": "up",
+        "4": "from",
+        "answer": "for",
+        "type": "2"
+    },
+    "37": {
+        "question": "The Queen of Hearts casino will be located somewhere ___ the new highway.",
+        "1": "into",
+        "2": "among",
+        "3": "without",
+        "4": "along",
+        "answer": "along",
+        "type": "2"
+    },
+    "38": {
+        "question": "TEST 2  Customers are advised to double-check their orders to ensure that they will be sent ___ the correct address.",
+        "1": "until",
+        "2": "upon",
+        "3": "among",
+        "4": "to",
+        "answer": "to",
+        "type": "2"
+    },
+    "39": {
+        "question": "Mr. Ferguson had to inform the secretary that he wouldn't be able to return to work ___ January 22.",
+        "1": "between",
+        "2": "within",
+        "3": "above",
+        "4": "before",
+        "answer": "before",
+        "type": "2"
+    },
+    "40": {
+        "question": "The director ___ the new environmental safety committee, Mr. Tim Chamberlain, has studied both economics and ecological science at North State University.",
+        "1": "on",
+        "2": "of",
+        "3": "to",
+        "4": "by",
+        "answer": "of",
+        "type": "2"
+    },
+    "41": {
+        "question": "The secretary, Ms. Lucy Tran, has been working ___ 7 a.m. at responding to e-mails.",
+        "1": "until",
+        "2": "since",
+        "3": "about",
+        "4": "at",
+        "answer": "since",
+        "type": "2"
+    },
+    "42": {
+        "question": "In reservoirs ___ the countryside, increasing levels of acid rain have been detected.",
+        "1": "in between",
+        "2": "ahead of",
+        "3": "throughout",
+        "4": "except",
+        "answer": "throughout",
+        "type": "2"
+    },
+    "43": {
+        "question": "According to his contract, Mr. Jerry Campbell will be working in our software development department for the ___ two years.",
+        "1": "past",
+        "2": "yet",
+        "3": "next",
+        "4": "then",
+        "answer": "next",
+        "type": "2"
+    },
+    "44": {
+        "question": "Construction of the new supermarket is expected to last ___ early September.",
+        "1": "with",
+        "2": "on",
+        "3": "in",
+        "4": "until",
+        "answer": "until",
+        "type": "2"
+    },
+    "45": {
+        "question": "Today, our company headquarters are located ___ the Transcontinental Bank headquarters, at the corner of Cavalry Avenue and Queen Caroline Boulevard.",
+        "1": "without",
+        "2": "near",
+        "3": "down",
+        "4": "to",
+        "answer": "near",
+        "type": "2"
+    },
+    "46": {
+        "question": "The monthly meeting is expected to end ___ 2:00 p.m.",
+        "1": "ahead",
+        "2": "before",
+        "3": "early",
+        "4": "prior",
+        "answer": "before",
+        "type": "2"
+    },
+    "47": {
+        "question": "The cheapest mode of transportation ___ the airport is the shuttle bus that ferries passengers to the nearest subway station from the airport.",
+        "1": "on",
+        "2": "off",
+        "3": "next",
+        "4": "from",
+        "answer": "from",
+        "type": "2"
+    },
+    "48": {
+        "question": "This year's average customer satisfaction level was ___ last year's level.",
+        "1": "less",
+        "2": "little",
+        "3": "lower",
+        "4": "below",
+        "answer": "below",
+        "type": "2"
+    },
+    "49": {
+        "question": "The deal between Salten Industries and Epitwee Ventures Limited will not be official ___ signed by both parties next week.",
+        "1": "without",
+        "2": "until",
+        "3": "between",
+        "4": "against",
+        "answer": "until",
+        "type": "2"
+    },
+    "50": {
+        "question": "Manufacturing personnel are directed to read the new instruction manuals ___ consulting with the Engineering Department.",
+        "1": "than",
+        "2": "whether",
+        "3": "which",
+        "4": "before",
+        "answer": "before",
+        "type": "2"
+    }
+}
