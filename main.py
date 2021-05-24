@@ -1,12 +1,10 @@
 import numpy as np
-import pandas as pd
-import json, time
-
+import json
+import time
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-
 from sklearn.model_selection import train_test_split
 from sklearn.utils.class_weight import compute_class_weight
 from sklearn import metrics
@@ -257,12 +255,7 @@ if __name__ == "__main__":
     set4 = get_data_for_datatype('4')
     set5 = get_data_for_datatype('5')
     data = get_data(set1, set2, set3, set4, set5)
-    datatype = {}
-    datatype['1'] = set1
-    datatype['2'] = set2 
-    datatype['3'] = set3
-    datatype['4'] = set4 
-    datatype['5'] = set5
+    datatype = {'1': set1, '2': set2, '3': set3, '4': set4, '5': set5}
     train_dataloader, D_test = preprocess_data(data, max_seq_len=40, batch_size=32)
     bert = AutoModel.from_pretrained(config["model"])
     print(config)
