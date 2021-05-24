@@ -8,9 +8,9 @@
 
 ### 2. How to use
 
-  **Prerequisite**: python3.6+
+  **Prerequisites**: python3.6+
   
-  - Clone project and navigate to the project folder
+  - Clone this project and navigate to the project folder
   
   - Create virtual environment (optional, recommended)
   
@@ -24,4 +24,4 @@
   
   - Run main.py
   
-  >```python main.py```
+  > ```python main.py```
