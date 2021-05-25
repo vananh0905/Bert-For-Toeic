@@ -1,34 +1,43 @@
 import numpy as np
-import pandas as pd
-import json, time
-
+import json
+import time
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import TensorDataset, DataLoader, RandomSampler, SequentialSampler
-
 from sklearn.model_selection import train_test_split
 from sklearn.utils.class_weight import compute_class_weight
 from sklearn import metrics
 
 
 import transformers
-from transformers import AutoModel, AutoTokenizer
+from transformers import AutoModel, AutoTokenizer, RobertaTokenizer
 from transformers import AdamW
 
 
 # specify GPU
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+config = {
+    "model": "bert-base-uncased",
+    "hidden_size": 768
+}
 
-def get_data():
+tokenizer = AutoTokenizer.from_pretrained(config["model"], do_lower_case=True)
+
+
+def get_data(data1, data2, data3, data4, data5):
     print('Get data ...')
     with open("data.json") as data_file:
         file = json.load(data_file)
         data = []
         for value in file.values():
-            data.append(value)
+          if (value not in data1) and (value not in data2) and \
+            (value not in data3) and (value not in data4) and \
+            (value not in data5):
+              data.append(value)
 
     return data
+
 
 def get_data_for_datatype(id):
     print('Get dataset type ' + id)
@@ -37,12 +46,19 @@ def get_data_for_datatype(id):
         file = json.load(data_file)
         data = []
         for value in file.values():
-            data.append(value)
+            new = {}
+            new['question'] = value['question']
+            new['1'] = value['1']
+            new['2'] = value['2']
+            new['3'] = value['3']
+            new['4'] = value['4']
+            new['answer'] = value['answer']
+            data.append(new)
 
     return data
 
-def preprocess_data(data, max_seq_len, batch_size):
 
+def preprocess_data(data, max_seq_len, batch_size):
     print('Preprocess data ...')
     # split train set, test set
     D_train, D_test = train_test_split(data, random_state = 2020, test_size = 0.2)
@@ -60,7 +76,6 @@ def preprocess_data(data, max_seq_len, batch_size):
 
     train_X, train_Y = get(D_train)
 
-    tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
 
     tokens_train = tokenizer.batch_encode_plus(
         train_X,
@@ -71,58 +86,44 @@ def preprocess_data(data, max_seq_len, batch_size):
     )
 
     # convert to Tensor
-    train_seq = torch.tensor(tokens_train['input_ids'])
-    train_mask = torch.tensor(tokens_train['attention_mask'])
+    train_seq = tokens_train['input_ids'].clone().detach()
+    train_mask = tokens_train['attention_mask'].clone().detach()
     train_Y = torch.tensor(train_Y)
 
     train_data = TensorDataset(train_seq, train_mask, train_Y)
     train_sampler = RandomSampler(train_data)
     train_dataloader = DataLoader(train_data, sampler=train_sampler, batch_size=batch_size)
-
     print('Done')
-
     return train_dataloader, D_test
 
 
 class Net(nn.Module):
+
     def __init__(self, bert):
         super(Net, self).__init__()
         self.bert = bert
 
-        # dropout Layer
         self.dropout = nn.Dropout(p=0.2)
-
-        self.relu = nn.ReLU()
-        self.fc1 = nn.Linear(768, 2)
-        # self.fc2 = nn.Linear(512, 2)
-        # self.softmax = nn.LogSoftmax(dim=1)
+        self.fc = nn.Linear(config["hidden_size"], 2)
 
 
     def forward(self, sent_id, masks):
-    
         q = self.bert(sent_id, attention_mask=masks)
         cls = q[1]
         x = self.dropout(cls)
-
-        x = self.fc1(x)
-        # x = self.relu(x)
-        # x = self.dropout(x)
-        
-        # # output Layer
-        # x = self.fc2(x)
-
+        x = self.fc(x)
         return x
 
 
 class TOEICBert:
 
-    def __init__(self, model, lr, n_epoches, train_loader):
+    def __init__(self, model, lr, n_epochs, train_loader):
         super(TOEICBert, self).__init__()
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         model = model.to(self.device)
         self.model = model
         self.lr = lr
-        self.n_epoches = n_epoches
+        self.n_epochs = n_epochs
 
         self.ce=torch.nn.CrossEntropyLoss()
         self.optimizer = self._get_optimizer()
@@ -131,14 +132,6 @@ class TOEICBert:
     def _get_optimizer(self, lr=None):
         if lr is None: lr = self.lr
         param_optimizer = list(self.model.named_parameters())
-        no_decay = ['bias', 'LayerNorm.weight']
-        optimizer_grouped_parameters = [
-                {'params': [param for name, param in param_optimizer if not any(nd in name for nd in no_decay)],
-                    'weight_decay': 0.01},
-                {'params': [param for name, param in param_optimizer if any(nd in name for nd in no_decay)],
-                'weight_decay': 0.0}
-        ]
-
         return AdamW(self.model.parameters(), lr=lr)
 
     
@@ -166,8 +159,7 @@ class TOEICBert:
             loss.backward()
             self.optimizer.step()
             
-            if step % 100 == 0:
-              print('\tbatch: {}/{} loss: {}'.format(step, len(train_dataloader), total_loss/(step+1)))
+        print('\tTrain loss: {:.2f}'.format(total_loss))
 
 
     def train(self, train_dataloader, test_dataloader, datatype):
@@ -175,33 +167,40 @@ class TOEICBert:
 
         print('Start training...')
 
-        for e in range(self.n_epoches):
-            print('Epoch {:3d} '.format(e+1))
+        for e in range(self.n_epochs):
+            print('============')
+            print('Epoch {}:'.format(e+1))
             self.train_epoch(train_dataloader)
 
-            train_acc, train_f1, train_prec = self.validate(train_dataloader)
-            print('train acc: {:.3f} | train f1: {:.3f} | train precision: {:.3f}'.format(train_acc, train_f1, train_prec))
+            # train_acc, train_f1, train_prec = self.evaluate(train_dataloader)
+            # print('\tTrain acc: {:.3f} | Train f1: {:.3f} | Train precision: {:.3f}'.format(train_acc, train_f1, train_prec))
+            # print('\tTrain F1 score: {:.3f}'.format(train_f1))
 
-            test_acc, time = self.evaluate(test_dataloader)
-            print('test acc: {:.3f} time each question: {:.3f}'.format(test_acc, time))
+            test_score, time = self.infer(test_dataloader)
+            
+            print("\t===== RESULTS =====")
 
-            type1_acc, _ = self.evaluate(datatype['1'])
-            print('type1 acc: {:.3f}'.format(type1_acc))
+            print('\tInference time:  {:.3f}s per question'.format(time))
+            
+            print('\tScore:\t\t {:.1f}'.format(test_score*100))
 
-            type2_acc, _ = self.evaluate(datatype['2'])
-            print('type2 acc: {:.3f}'.format(type2_acc))
+            type1_score, _ = self.infer(datatype['1'])
+            print('\tmeaning:\t {}'.format(int(type1_score*100)))
 
-            type3_acc, _ = self.evaluate(datatype['3'])
-            print('type3 acc: {:.3f}'.format(type3_acc))
+            type2_score, _ = self.infer(datatype['2'])
+            print('\tpreposition:\t {}'.format(int(type2_score*100)))
 
-            type4_acc, _ = self.evaluate(datatype['4'])
-            print('type4 acc: {:.3f}'.format(type4_acc))
+            type3_score, _ = self.infer(datatype['3'])
+            print('\tword_form:\t {}'.format(int(type3_score*100)))
 
-            type5_acc, _ = self.evaluate(datatype['5'])
-            print('type5 acc: {:.3f}'.format(type5_acc))
+            type4_score, _ = self.infer(datatype['4'])
+            print('\tconnecting_word: {}'.format(int(type4_score*100)))
+
+            type5_score, _ = self.infer(datatype['5'])
+            print('\tpronoun:\t {}'.format(int(type5_score*100)))
 
 
-    def validate(self, dataloader):
+    def evaluate(self, dataloader):
         self.model.eval()
         total_loss = 0
         total_num = 0
@@ -217,7 +216,6 @@ class TOEICBert:
                 
                 target_labels.extend(labels.cpu().detach().numpy())
                 predicted_labels.extend(torch.argmax(preds, dim=-1).cpu().detach().numpy())
-
         train_loss = total_loss/len(dataloader)
         predicted_labels, target_labels = np.array(predicted_labels), np.array(target_labels)
         accuracy = metrics.accuracy_score(target_labels, predicted_labels)
@@ -226,10 +224,9 @@ class TOEICBert:
         return accuracy, f1, precision
 
     
-    def evaluate(self, dataloader):
-        tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased', do_lower_case=True)
-
+    def infer(self, dataloader):
         def test(item):
+            global tokenizer
             self.model.eval()
             sents = []
             for id in range(1, 5):
@@ -239,6 +236,7 @@ class TOEICBert:
             with torch.no_grad():
                 output = self.model(inputs['input_ids'].to(device), inputs['attention_mask'].to(device))
             prediction = torch.softmax(output, dim=-1)
+            # print(prediction)
             return torch.argmax(prediction[:, 1], dim=-1).item()+1
         tstart = time.time()
         sent = 0
@@ -251,20 +249,16 @@ class TOEICBert:
 
 
 if __name__ == "__main__":
-    bert = AutoModel.from_pretrained('bert-base-uncased')
-    model = Net(bert)
-    data = get_data()
     set1 = get_data_for_datatype('1')
     set2 = get_data_for_datatype('2')
     set3 = get_data_for_datatype('3')
     set4 = get_data_for_datatype('4')
     set5 = get_data_for_datatype('5')
-    datatype = {}
-    datatype['1'] = set1
-    datatype['2'] = set2 
-    datatype['3'] = set3
-    datatype['4'] = set4 
-    datatype['5'] = set5
-    train_dataloader, D_test = preprocess_data(data, max_seq_len = 64, batch_size=32)
-    appr = TOEICBert(model, lr=1e-5, n_epoches=20, train_loader=train_dataloader)
+    data = get_data(set1, set2, set3, set4, set5)
+    datatype = {'1': set1, '2': set2, '3': set3, '4': set4, '5': set5}
+    train_dataloader, D_test = preprocess_data(data, max_seq_len=40, batch_size=32)
+    bert = AutoModel.from_pretrained(config["model"])
+    print(config)
+    model = Net(bert)
+    appr = TOEICBert(model, lr=1e-5, n_epochs=5, train_loader=train_dataloader)
     appr.train(train_dataloader, D_test, datatype)
